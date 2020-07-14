@@ -154,7 +154,7 @@ df1=spark.read.parquet(wasbs_path)
 df1.write.mode("overwrite").saveAsTable("Covid19.opendatatbl")
 ```
 
-4. Integration of both services - you can access this Spark created table using SQL On-demand as well as metadata is shared. 
+4. You can access this Spark created table using SQL On-demand as well because metadata is shared. 
 
  
 ![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Spark_SQL_OnDemand.jpg)
