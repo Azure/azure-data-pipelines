@@ -50,7 +50,7 @@ This section illustrates an example on “how to” use these prepackaged ingest
 
 ### Instructions for setting up ‘Covid_Tracking’ pipeline in Azure Data Factory: 
 
-1. Download this pipeline [template](https://github.com/covid-modeling/pandemic-datalake-templates/raw/master/CovidTracking/Covid_Tracking.zip) (in the form of zip files).
+1. Download this pipeline [template](https://github.com/Azure/azure-data-pipelines/blob/main/adf-templates/COVID%20Tracking%20Project/Covid_Tracking.zip) (in the form of zip files).
 
    Each of these pipelines will pull the raw source (pre-configured) and move it to the user-specified blob storage. It would then run data flows to 
    reformat column names. Final output will be dropped under a curated folder in various file formats (csv, json, jsonl, parquet).   
@@ -118,7 +118,7 @@ This section illustrates an example on “how to” use these prepackaged ingest
 
  
 
-12. The steps remain same for the [ECDC_Cases](https://github.com/covid-modeling/pandemic-datalake-templates/raw/master/ECDCCases/ECDC_Cases.zip) pipeline except for the step 3 to create source linked service. Setup the source linked service for the ECDC pipeline as below: 
+12. The steps remain same for the [ECDC_Cases](https://github.com/Azure/azure-data-pipelines/blob/main/adf-templates/ECDCCases/ECDC_Cases.zip) pipeline except for the step 3 to create source linked service. Setup the source linked service for the ECDC pipeline as below: 
 
 ![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Edit_Link_Service.png)
 
