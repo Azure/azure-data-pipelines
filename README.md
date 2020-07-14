@@ -8,7 +8,7 @@ To assist in the process, Microsoft is making various COVID-19 related datasets 
 
 With so much widespread COVID-19 impacts in the past few months, it is expected that organizations would be gearing up for disruptions and various changes in the way they continue to conduct their operations in future during this long term pandemic recovery phase. While many data communities around the world are continuing their efforts with data to help fight against this pandemic, this blog covers a few related topics – “COVID-19 Data Lake on Azure”,  “Ingestion templates/pipelines”, “Consumption of these datasets” – and how this can help analyzing insights and help organizations make informed decisions as economies and communities start opening up gradually. 
 
-## COVID-19 Data Lake  
+## COVID-19 Data Lake with Open Datasets  
 To help make COVID-19 data more accessible, Microsoft has created a [COVID-19 Data Lake](https://azure.microsoft.com/en-us/services/open-datasets/catalog/covid-19-data-lake/), hosted on Azure Data Lake Storage in the East US region, that contains COVID-19 related datasets from various sources, focused initially on testing and patient outcome tracking data and social distancing policy. We are making datasets available for easier access within existing Azure Analytics environments for research purposes. You can access these ready-to-use datasets and incorporate them into various use cases to understand and predict the impact of COVID-19 on your communities, businesses and markets.  These datasets are available on [Azure Open Datasets](https://azure.microsoft.com/en-us/services/open-datasets/catalog/covid-19-data-lake/) - an initiative for curated collections of publicly available datasets that are ready to use in machine learning workflows and are easy to access from various Azure services. For each dataset, modified versions are available in csv, json, json-lines, and parquet formats, as well as the raw data as ingested.  
 
 The following datasets are currently available.  Additional datasets will be added in due course. Schema details and code samples showing data access from Azure Synapse, Azure Databricks and Azure Notebooks are provided for each dataset.  
@@ -121,7 +121,9 @@ This section illustrates an example on “how to” use these prepackaged ingest
 12. The steps remain same for the [ECDC_Cases](https://github.com/covid-modeling/pandemic-datalake-templates/raw/master/ECDCCases/ECDC_Cases.zip) pipeline except for the step 3 to create source linked service. Setup the source linked service for the ECDC pipeline as below: 
 
 ![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Edit_Link_Service.png)
- 
+
+
+
 
 ## Consumption of these datasets using Azure Synapse 
 
