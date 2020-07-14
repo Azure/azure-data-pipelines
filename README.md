@@ -162,34 +162,5 @@ df1.write.mode("overwrite").saveAsTable("Covid19.opendatatbl")
 ![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Spark_SQL_OnDemand.jpg)
   
 
- 
-
- 
-
-## Consumption of these datasets using Azure Data Share (Optional)
-
-As indicated in the architecture diagram, this is an _alternative option_ using Azure Data Share. This is for users who prefer to have a provider-consumer model mechanism using Azure Data Share to securely copy datasets from COVID-19 Data Lake storage to their own ADLS storage accounts. Using snapshot-based sharing, data moves from data provider's Azure subscription and lands in the data consumer's Azure subscription.  
-
-1. Microsoft can share selected datasets (raw & curated) 
-
-![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Covid19_Data_Share.png)
-
- 
-
-2. Follow steps and “Accept & Configure” your invitation via email or directly in Azure Portal and set up your target data share account/store. 
-
-![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Covid19_Data_Share_Invite.png)
-
- 
-
-3. Map received datasets to targets 
-
-![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Recieved_Ds_Targets.png)
-
- 
-
-4. Consumer’s ADLS account receives the shared data sets as per scheduled frequency. 
-
-![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Consumer_ADLS.jpg)
 
 _The team members who have contributed to this article are (in alphabetical order) Abhishek Narain, Benolin Thomas, Bill Gibson, Dinesh Srirangapatna, James Serra, Madhu Reddy Timiri, Naveed Shahzad, Pratim Das, Rahul Athale, Ravi Pedapati, Santosh Balasubramanian, Ted Malone._
