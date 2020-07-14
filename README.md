@@ -46,7 +46,7 @@ A high-level architecture depicting the data flow is shown below:
 
  
 
-This section illustrates an example on “how to” use these prepackaged ingestion templates that allow you to quickly configure data ingestion pipeline in few easy steps. These templates can be further easily customized to fit the needs of your data ingestion and transformation scenario specific to your business needs. 
+This section illustrates an example on “how to” use these prepackaged ingestion templates that allow you to quickly configure data ingestion pipeline in few easy steps. These [templates](https://github.com/Azure/azure-data-pipelines/tree/main/adf-templates) can be further easily customized to fit the needs of your data ingestion and transformation scenario specific to your business needs. 
 
 ### Instructions for setting up ‘Covid_Tracking’ pipeline in Azure Data Factory: 
 
