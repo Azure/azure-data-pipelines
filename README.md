@@ -1,5 +1,3 @@
-**Last updated, June 24, 2020** 
-
 ## Introduction 
 
 As organizations wrestle with the impact of COVID-19 on their operations, access to data describing the progress of the pandemic and government policies can help in making informed decisions as economies and communities start opening up gradually.  
