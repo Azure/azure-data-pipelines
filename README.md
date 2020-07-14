@@ -30,7 +30,7 @@ Lately, there has been a lot of interest in utilizing COVID-19 information for p
 
 A high-level architecture depicting the data flow is shown below: 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/High_level.jpg)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/High_level.jpg)
 
  
 
@@ -57,39 +57,39 @@ This section illustrates an example on “how to” use these prepackaged ingest
 
 2. Create new ‘pipeline from template’, select ‘use local template’ and select ‘Covid_Tracking.zip’ file 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/PipeLine_From_Temp.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/PipeLine_From_Temp.png)
  
 
 3. Select source, sink linked services 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Sink_Link_Serv.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Sink_Link_Serv.png)
 
 
 4. Create source linked service (HTTP Source) 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Http_Source.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Http_Source.png)
  
 
 5. Create sink (Blob Storage) linked service. You can select any Blob Storage that you may have already provisioned and use it as the datalake sink.  
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/DL_Sink.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/DL_Sink.png)
 
 6. Click “Use this template” at bottom of screen 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Use_Template.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Use_Template.png)
 
  
 
 7. Once the template is loaded from the zip file, you should see the following new resources  have been created. Click on “Publish All” to ensure these resources are persisted. 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Publish_All.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Publish_All.png)
 
 
 8. Click on the ‘Parameters’ tab for the pipeline and review the default values. These values are further customizable. 
 
  
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Parameter_Tab.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Parameter_Tab.png)
 
  
 
@@ -97,7 +97,7 @@ This section illustrates an example on “how to” use these prepackaged ingest
 
    You can further review the transformations and use the visual interface to add custom logic if desired. 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Data_Flows.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Data_Flows.png)
  
 
  
@@ -106,13 +106,13 @@ This section illustrates an example on “how to” use these prepackaged ingest
 
 10. 'Debug' run the pipeline.  You will be prompted to review the parameters for this run. 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Debug.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Debug.png)
 
  
 
 11. After successful execution, both (raw and curated) datasets will have been created/copied to the destination path you specified on your Azure Data Lake Store account 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Storage_Explorer.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Storage_Explorer.png)
 
  
 
@@ -120,7 +120,7 @@ This section illustrates an example on “how to” use these prepackaged ingest
 
 12. The steps remain same for the [ECDC_Cases](https://github.com/covid-modeling/pandemic-datalake-templates/raw/master/ECDCCases/ECDC_Cases.zip) pipeline except for the step 3 to create source linked service. Setup the source linked service for the ECDC pipeline as below: 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Edit_Link_Service.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Edit_Link_Service.png)
  
 
 ## Consumption of these datasets using Azure Synapse 
@@ -129,14 +129,14 @@ This section illustrates an example on “how to” use these prepackaged ingest
 
 1. Download the Synapse notebook from [Azure Open Datasets](https://azure.microsoft.com/en-us/services/open-datasets/catalog/covid-tracking/#AzureSynapse)
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/NoteBook_Open_Ds.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/NoteBook_Open_Ds.png)
  
 
  
 
 2. Import the downloaded notebook into Azure Synapse 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/NoteBook_Import_Synapse.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/NoteBook_Import_Synapse.png)
 
  
 
@@ -145,7 +145,7 @@ This section illustrates an example on “how to” use these prepackaged ingest
 3. Add the creation of a Spark Database in the notebook and save dataset as Table 
 
  
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Spark_Creation.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Spark_Creation.png)
  
 ```python
 %%spark
@@ -157,7 +157,7 @@ df1.write.mode("overwrite").saveAsTable("Covid19.opendatatbl")
 4. Integration of both services - you can access this Spark created table using SQL On-demand as well as metadata is shared. 
 
  
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Spark_SQL_OnDemand.jpg)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Spark_SQL_OnDemand.jpg)
   
 
  
@@ -170,24 +170,24 @@ As indicated in the architecture diagram, this is an _alternative option_ using 
 
 1. Microsoft can share selected datasets (raw & curated) 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Covid19_Data_Share.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Covid19_Data_Share.png)
 
  
 
 2. Follow steps and “Accept & Configure” your invitation via email or directly in Azure Portal and set up your target data share account/store. 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Covid19_Data_Share_Invite.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Covid19_Data_Share_Invite.png)
 
  
 
 3. Map received datasets to targets 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Recieved_Ds_Targets.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Recieved_Ds_Targets.png)
 
  
 
 4. Consumer’s ADLS account receives the shared data sets as per scheduled frequency. 
 
-![](https://github.com/covid-modeling/pandemic-datalake-templates/blob/master/WikiImages/Consumer_ADLS.jpg)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Consumer_ADLS.jpg)
 
 _The team members who have contributed to this article are (in alphabetical order) Abhishek Narain, Benolin Thomas, Bill Gibson, Dinesh Srirangapatna, James Serra, Madhu Reddy Timiri, Naveed Shahzad, Pratim Das, Rahul Athale, Ravi Pedapati, Santosh Balasubramanian, Ted Malone._
