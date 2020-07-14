@@ -1,4 +1,4 @@
-**Last updated, June 24, 2020**
+**Last updated, June 24, 2020** 
 
 ## Introduction 
 
