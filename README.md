@@ -30,7 +30,7 @@ Lately, there has been a lot of interest in utilizing COVID-19 information for p
 
 A high-level architecture depicting the data flow is shown below: 
 
-![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/High_level.jpg)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/arch simple.jpg)
 
  
 
