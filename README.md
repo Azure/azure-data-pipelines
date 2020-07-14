@@ -116,11 +116,13 @@ This section illustrates an example on “how to” use these prepackaged ingest
 
  
 
-12. The steps remain same for the [ECDC_Cases](https://github.com/Azure/azure-data-pipelines/blob/main/adf-templates/ECDCCases/ECDC_Cases.zip) pipeline except for the step 3 to create source linked service. Setup the source linked service for the ECDC pipeline as below: 
+12. [Templates](https://github.com/Azure/azure-data-pipelines/tree/main/adf-templates) for other datasets are also available. You just have to change the source linked service as shown below for ECDC example.
 
 ![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Edit_Link_Service.png)
 
-
+  
+  
+  
 
 
 ## Consumption of these datasets using Azure Synapse 
