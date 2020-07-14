@@ -182,7 +182,7 @@ As indicated in the architecture diagram, this is an _alternative option_ using 
 
 3. Map received datasets to targets 
 
-![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Recieved_Ds_Targets.png)
+![](https://github.com/Azure/azure-data-pipelines/blob/main/Images/Recieved_Ds_Targets.jpng)
 
  
 
